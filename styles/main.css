@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    background-color: #F7931E;
+} 
+
+body {
+    display: grid;
+    margin: 0;
+    height: 790px;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 60% 10%;
+    grid-gap: 20px;
+}
+
+header {
+    background-color: #603813;
+    border-bottom: 10px solid black;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+header img {
+    padding: 1em
+}
+
+nav {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	padding: 4em;
+	position: relative;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 3em 
+}
+
+#nav_menu ul li a {
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+	color: yellow;
+}
+
+#left {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    padding: 6em;
+}
+
+#left h1 {
+    font-family: Edwardian Script ITC;
+    font-size: 2.6em;
+    padding: 0;
+    margin: 0;
+}
+
+#left img {
+    border: 4px solid black;
+}
+
+#right {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    padding: 10em 10em 0 50em
+}
+
+#right h1 {
+    font-family: Footlight MT Light;
+    width: 30em;
+}
+
+section {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 2em;}
+
+footer {
+    background-color: #603813;
+    grid-column: 1/3;
+    grid-row: 4/4;
+}
+
+footer p {
+    float: left;
+    padding: 1.5em 60em 0 0;
+    color: white;
+}
+
+#links {
+    grid-column: 3/3;
+    grid-row: 4/4;
+    float: right;
+    padding: 1em 30em 5em 0
+}
